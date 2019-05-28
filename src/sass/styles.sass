@@ -1,0 +1,108 @@
+// Your variable overrides
+
+// $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1200px)
+
+// $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1600px)
+
+$spacer: 1rem
+$spacers: (6: $spacer * 4, 7: $spacer * 5, 8: $spacer * 6, 9: $spacer * 7, 10: $spacer * 8)
+
+// sizes
+$grid-gutter-width: 24px
+$font-size-base: 1rem
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap"
+
+body
+	background-color: #000
+
+.container
+	background: linear-gradient(to right, #d9d8d9, #f7f7f7) #f7f7f7
+
+.row
+	&:not(:last-of-type)
+		margin-bottom: 5rem
+
+	+media-breakpoint-down(md)
+		& > div
+			padding: 0 15%
+			&:not(:last-child)
+				margin-bottom: 3rem
+
+	+media-breakpoint-up(lg)
+		& > div:first-child:not(:last-child)
+			padding: 0 12%
+
+		& > div:last-child:not(:first-child)
+			padding-left: 0
+			padding-right: 12%
+
+.card
+	background-color: transparent
+	padding: 0
+	border: none
+
+	&#lead
+		margin-top: 2rem
+
+		+media-breakpoint-up(lg)
+			margin-top: 15rem
+	
+.logo
+	text-align: center
+	margin-top: 2rem
+
+	+media-breakpoint-only(lg)
+		margin-top: 3rem
+	
+	+media-breakpoint-up(xl)
+		margin-top: 5rem
+
+	+media-breakpoint-up(lg)
+		position: absolute
+		width: 100%
+		z-index: 1
+
+
+	img
+		margin-right: 1.4rem
+
+footer
+	margin-top: 5rem
+	padding-bottom: 4rem
+	background: url("../images/decoration.png") 75% 100% / 50% no-repeat
+
+	address
+		margin: 5rem 0
+
+	.disclaimer
+		margin-bottom: 0
+		+media-breakpoint-up(lg)
+			padding: 0 10%
+
+h1
+	font-size: 1.6rem
+	margin-bottom: 3rem
+
+h2
+	font-size: 1.5rem
+	margin-bottom: 1rem
+
+p
+	font-size: 1rem
+
+ul
+	padding-left: 1.1rem
+
+	li
+		margin-bottom: .5rem
+
+a, a:hover, a:visited, a:active
+	color: #000
+	text-decoration: underline
+	font-weight: bold
+
+#artist-1
+	+media-breakpoint-down(md)
+		padding-left: 0
