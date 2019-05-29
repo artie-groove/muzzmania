@@ -1,4 +1,4 @@
 {
 	"srcPath": "./src",
-	"buildPath": "./build"
+	"buildPath": "../gh-pages"
 }
