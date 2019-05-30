@@ -15,10 +15,8 @@ $font-size-base: 1rem
 @import "node_modules/bootstrap/scss/bootstrap"
 
 body
-	background-color: #000
-
-.container
-	background: linear-gradient(to right, #d9d8d9, #f7f7f7) #f7f7f7
+	border: 20px solid #000
+	background: url("../images/bg-overlay.png") 50% 0 / contain repeat, linear-gradient(to right, #d9d8d9, #f7f7f7), #f7f7f7
 
 .row
 	&:not(:last-of-type)
@@ -64,9 +62,11 @@ body
 		width: 100%
 		z-index: 1
 
+		img
+			margin-right: 1.4rem
 
 	img
-		margin-right: 1.4rem
+		margin-bottom: .8rem
 
 footer
 	margin-top: 5rem
