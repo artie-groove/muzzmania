@@ -8146,10 +8146,8 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  background-color: #000; }
-
-.container {
-  background: linear-gradient(to right, #d9d8d9, #f7f7f7) #f7f7f7; }
+  border: 20px solid #000;
+  background: url("../images/bg-overlay.png") 50% 0/contain repeat, linear-gradient(to right, #d9d8d9, #f7f7f7), #f7f7f7; }
 
 .row:not(:last-of-type) {
   margin-bottom: 5rem; }
@@ -8190,9 +8188,11 @@ body {
     .logo {
       position: absolute;
       width: 100%;
-      z-index: 1; } }
+      z-index: 1; }
+      .logo img {
+        margin-right: 1.4rem; } }
   .logo img {
-    margin-right: 1.4rem; }
+    margin-bottom: .8rem; }
 
 footer {
   margin-top: 5rem;
