@@ -205,6 +205,7 @@ gulp.task('develop', gulp.parallel('watch', () => {
 		.pipe(server({
 			livereload: true,
 			open: true,
+			host: "0.0.0.0",
 			directoryListing: {
 	            enable: true,
 	            path: bs.router.buildPath

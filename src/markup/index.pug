@@ -2,12 +2,7 @@ extends ../templates/html.tpl.pug
 
 block content
 	.container
-		.row.mb-0
-			.col
-				.logo
-					img(src='assets/images/logo.svg', width='225', height='25', alt='Logo')
-					div.font-weight-bold Создадим творческое настроение вместе!
-		.row
+		.row#hero
 			.col-lg-6
 				.card#lead
 					h1 Muzzmania LLC ищет front-end и&nbsp;back-end разработчиков для реализации проекта
@@ -21,6 +16,10 @@ block content
 						li Дальнейшее сотрудничество по&nbsp;многим проектам
 			
 			.col-lg-6.pr-0#artist-1
+				.logo
+					img(src='assets/images/logo.svg', width='225', height='25', alt='Logo')
+					div.font-weight-bold Создадим творческое настроение вместе!
+
 				img.img-fluid(src="assets/images/artist-1.jpg" alt="Artist" width="790" height="1053")
 
 		.row
