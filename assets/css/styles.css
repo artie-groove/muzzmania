@@ -8145,9 +8145,15 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+@media (max-width: 575.98px) {
+  html {
+    font-size: 12px; } }
+
 body {
-  border: 20px solid #000;
   background: url("../images/bg-overlay.png") 50% 0/contain repeat, linear-gradient(to right, #d9d8d9, #f7f7f7), #f7f7f7; }
+  @media (min-width: 576px) {
+    body {
+      border: 20px solid #000; } }
 
 .row:not(:last-of-type) {
   margin-bottom: 5rem; }
@@ -8170,14 +8176,17 @@ body {
   padding: 0;
   border: none; }
   .card#lead {
-    margin-top: 2rem; }
+    margin-top: 5rem; }
     @media (min-width: 992px) {
       .card#lead {
         margin-top: 15rem; } }
 
 .logo {
   text-align: center;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1; }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     .logo {
       margin-top: 3rem; } }
@@ -8186,11 +8195,7 @@ body {
       margin-top: 5rem; } }
   @media (min-width: 992px) {
     .logo {
-      position: absolute;
-      width: 100%;
-      z-index: 1; }
-      .logo img {
-        margin-right: 1.4rem; } }
+      left: calc(-50% + .5rem); } }
   .logo img {
     margin-bottom: .8rem; }
 
@@ -8230,3 +8235,12 @@ a, a:hover, a:visited, a:active {
 @media (max-width: 991.98px) {
   #artist-1 {
     padding-left: 0; } }
+
+@media (max-width: 991.98px) {
+  #hero {
+    position: relative; }
+    #hero > div:first-child {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      transform: translateY(-50%); } }
